@@ -2,15 +2,19 @@
 <html>
 <head>
     <title>Sajjad Hossain</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-    <!-- Logo -->
-    <div class="logo">
-        <img src="{{ url_for('static', filename='profile.png') }}" alt="Sajjad Logo">
-        <span class="logo-text">Sajjad Hossain</span>
+<div class="logo">
+    <img src="{{ url_for('static', filename='profile.png') }}" alt="Sajjad Logo">
+
+    <div class="logo-text">
+        <h1>Sajjad Hossain</h1>
+        <p class="title">Developer</p>
     </div>
+</div>
 
     <!-- Hero Section -->
     <section class="hero">

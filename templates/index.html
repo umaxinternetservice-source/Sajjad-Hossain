@@ -2,9 +2,21 @@
 <html>
 <head>
     <title>Sajjad Hossain</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Hi, I'm Sajjad Hossain 👋</h1>
-    <p>I am learning Flask Web Development.</p>
+
+    <!-- Logo -->
+    <div class="logo">
+        <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Sajjad Logo">
+        <span class="logo-text">Sajjad Hossain</span>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Hi, I'm Sajjad 👋</h1>
+        <p>I am learning Flask Web Development and building cool projects.</p>
+    </section>
+
 </body>
 </html>

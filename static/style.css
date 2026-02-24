@@ -49,9 +49,9 @@ body {
 
 .sidebar {
     position: fixed;
-    top: 110px;                 /* logo height অনুযায়ী adjust */
+    top: 110px;
     left: 0;
-    width: 180px;
+    width: 120px;
     height: calc(100% - 110px);
     background: #1e293b;
     padding-top: 30px;

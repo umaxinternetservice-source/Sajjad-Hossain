@@ -74,6 +74,8 @@ body {
 .sidebar a.active {
     background: white;
     color: black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 /* Top curve */

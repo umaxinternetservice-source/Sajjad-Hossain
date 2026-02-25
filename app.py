@@ -15,15 +15,15 @@ def projects():
     return render_template("projects.html", active_page="projects")
 #photos
 @app.route("/photos")
-def projects():
+def photos():
     return render_template("photos.html", active_page="photos")
 #videos
 @app.route("/videos")
-def projects():
+def videos():
     return render_template("videos.html", active_page="videos")
 #contacts
 @app.route("/contacts")
-def projects():
+def contacts():
     return render_template("contacts.html", active_page="contacts")
 
 if __name__ == "__main__":

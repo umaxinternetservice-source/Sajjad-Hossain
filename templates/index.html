@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sajjad Hossain</title>
+    <title>{% block title %}{% endblock %}</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
@@ -25,11 +25,10 @@
     <a href="/contacts" class="{% if active_page == 'contacts' %}active{% endif %}">Contacts</a>
 </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Welcome to my Website</h1>
-        <p>I am learning Flask Web Development and building cool projects.</p>
-    </section>
+<section class="hero">
+    {% block content %}
+    {% endblock %}
+</section>
 
 </body>
 </html>

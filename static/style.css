@@ -61,12 +61,12 @@ body {
     display: block;
     padding: 12px 20px;
     text-decoration: none;
-    color: white;
+    color: #1abc9c;
     border-left: 4px solid transparent;
 }
 
 .sidebar a.active {
-    background-color: #1abc9c;
+    background-color: #f4f6f9;
     border-left: 4px solid white;
 }
 

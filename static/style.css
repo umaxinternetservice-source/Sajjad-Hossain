@@ -51,7 +51,7 @@ body {
     position: fixed;
     top: 110px;
     left: 0;
-    width: 120px;
+    width: 100px;
     height: calc(100% - 110px);
     background: #1e293b;
     padding-top: 30px;

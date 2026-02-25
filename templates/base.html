@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
 
+    <!-- Logo -->
+    <div class="logo">
+        <h2>My Website</h2>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="/" class="{% if active_page == 'home' %}active{% endif %}">Home</a>
+        <a href="/about" class="{% if active_page == 'about' %}active{% endif %}">About</a>
+        <a href="/projects" class="{% if active_page == 'projects' %}active{% endif %}">Projects</a>
+        <a href="/photos" class="{% if active_page == 'photos' %}active{% endif %}">Photos</a>
+        <a href="/videos" class="{% if active_page == 'videos' %}active{% endif %}">Videos</a>
+        <a href="/contacts" class="{% if active_page == 'contacts' %}active{% endif %}">Contacts</a>
+    </div>
+
+    <!-- Page Content -->
+    <div class="hero">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+</body>
+</html>

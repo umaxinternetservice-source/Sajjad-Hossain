@@ -49,12 +49,12 @@ body {
 
 .sidebar {
     position: fixed;
-    top: 120px;
+    top: 110px;
     left: 0;
     width: 120px;
-    height: calc(100% - 120px);
+    height: calc(100% - 110px);
     background: #1e293b;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .sidebar a {

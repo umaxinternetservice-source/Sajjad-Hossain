@@ -17,12 +17,12 @@
 </div>
 
 <div class="sidebar">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Projects</a>
-    <a href="#">Photos<a/>
-    <a href="#">Videos<a/>
-    <a href="#">Contact</a>
+    <a href="/" class="{% if active_page == 'home' %}active{% endif %}">Home</a>
+    <a href="/about" class="{% if active_page == 'about' %}active{% endif %}">About</a>
+    <a href="/projects" class="{% if active_page == 'projects' %}active{% endif %}">Projects</a>
+    <a href="/photos" class="{% if active_page == 'photos' %}active{% endif %}">Photos</a>
+    <a href="/videos" class="{% if active_page == 'videos' %}active{% endif %}">Videos</a>
+    <a href="/contacts" class="{% if active_page == 'contacts' %}active{% endif %}">Contacts</a>
 </div>
 
     <!-- Hero Section -->

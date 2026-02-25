@@ -58,9 +58,13 @@ body {
 }
 
 .sidebar {
-    width: 200px;
-    background: #1f2a3c;
-    position: relative;
+    position: fixed;
+    top: 110px;
+    left: 0;
+    width: 120px;   /* slimmer */
+    height: calc(100% - 110px);
+    background: #1e293b;
+    padding-top: 20px;
 }
 
 .sidebar a.active::before {
